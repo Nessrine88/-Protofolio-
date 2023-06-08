@@ -17,14 +17,13 @@ body {
 }
 
 .background {
-  height: 8000px;
+  height: max-content;
   width: auto;
   display: flex;
   flex-direction: column;
   background-color: white;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px;
 }
 
 .container {
@@ -35,6 +34,7 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .toolbar img {
@@ -349,21 +349,6 @@ button:hover {
   margin-top: 40px;
 }
 
-.keeping-track button {
-  background-color: #36b37f;
-  border: none;
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 4px;
-  width: 150px;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-right: 10px;
-}
-
 .about-me button:hover {
   background-color: #c5e9da;
   color: #172b4d;
@@ -379,146 +364,21 @@ button:hover {
   padding: 20px;
 }
 
-.get-in-touch {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.get-in-touch p {
-  text-align: center;
-  color: #172b4d;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  display: flexbox;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem ;
-  margin-bottom: 2rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-input[type="text"],
-input[type="email"] {
-  margin-top: 24px;
-  border-radius: 4px;
-  border: #d0d9d4 solid;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 24px;
-  padding-left: 20px;
-}
-
-textarea {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 24px;
-  border-color: #36b37e;
-  padding-left: 30px;
-  padding-top: 10px;
-  font-size: 15px;
-}
-
-.contact-button {
-  height: 48px;
-  width: 129px;
-  margin-top: 20px;
-  border-radius: 4px;
-  padding: 12px;
-  background-color: #36b37e;
-  border: none;
-  color: #fff;
-  line-height: 24px;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.email {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: center;
-  font-style: italic;
-  color: #42526e;
-  margin-top: 30px;
-}
-
-.get-in-touch a {
-  margin-top: 30px;
-  padding: 2px;
-}
-
-.keeping-track h3 {
-  color: #172b4d;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 44px;
-  text-align: left;
-}
-
-.keeping-track ul {
-  justify-content: left;
-  display: flex;
-  margin: 12px 0;
-}
-
-.keeping-track p {
-  color: #344563;
-  font-style: regular;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.keeping-track button:hover {
-  background-color: #c5e9da;
-  color: #172b4d;
-  transition: 0.3s;
-}
-
-.track-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 20px;
-}
-
-.track-buttons a {
-  padding: 0;
-  margin-top: 20px;
-}
-
-.btn1 {
-  height: 50px;
-}
-
-.btn2 {
-  height: 50px;
-  width: 100px;
-}
-
-.track img {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 20px;
-}
-
-@media all and (min-width: 768px) {
+@media (min-width: 768px) {
   .toggle-nav {
     display: flex;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100vh;
+  }
+
+  textarea {
+    width: 500px;
+  }
+
+  .toolbar img {
+    display: none;
   }
 }
