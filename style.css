@@ -231,7 +231,7 @@ h3 {
 
 .button {
   display: inline-flex;
-  background-color: #36b37e;
+  background-color: #36b37f;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -251,13 +251,13 @@ h3 {
 }
 
 .button:hover {
-  background-color: #c5e9da;
-  color: #172b4d;
-  font-weight: bold;
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
 }
 
 .button:active {
-  background-color: #238c61;
+  background-color: #008552;
 }
 
 .skill-list li {
@@ -354,13 +354,13 @@ h3 {
 }
 
 .about-me button:hover {
-  background-color: #c5e9da;
-  color: #172b4d;
-  font-weight: bold;
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
 }
 
 .about-me button:active {
-  background-color: #238c61;
+  background-color: #008552;
 }
 
 .about-me p {
