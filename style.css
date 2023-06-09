@@ -3,8 +3,13 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+a {
   cursor: pointer;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
@@ -24,17 +29,23 @@ body {
   background-color: white;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .container {
-  width: 327px;
-  height: 474px;
+  width: 100%;
+  max-height: 474px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 1em;
+}
+
+.skills-container {
+  margin-top: 4em;
 }
 
 .toolbar ul {
@@ -128,11 +139,11 @@ span {
 .my-work {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 72px;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 1em;
   margin-top: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -143,51 +154,110 @@ span {
   gap: 10px;
   align-items: center;
   justify-content: center;
+  margin-top: 3em;
 }
 
 .card {
-  margin-top: 24px;
-}
-
-.card-work {
-  background-color: #d0d9d4;
-  width: 300px;
-  height: 252px;
-}
-
-.project-information {
-  border: solid 1px #d0d9d4;
   border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  height: 80vh;
   display: flex;
-  justify-content: flex-end;
-  width: 300px;
-  height: 474px;
   flex-direction: column;
-  align-items: center;
+  border: #d0d9d4 solid 1px;
+  padding: 0;
+  margin: 1em;
 }
 
-.project-information p {
+.upper-row {
+  background-color: #ebf0ee;
+  padding: 1em;
+  width: auto;
+  height: 45%;
+  border: #d0d9d4 1px;
+}
+
+.lower-row {
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border-radius: 10px;
+  border: #d0d9d4 1px;
+}
+
+.lower-row ul {
+  display: flex;
+}
+
+h3 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #3a4a42;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  margin: 2% 2%;
 }
 
-.project-information ul {
-  list-style: none;
+.flex-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.flex-list li {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  margin-top: 16px;
-  flex-wrap: wrap;
+  color: #3a4a42;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #ebf0ee;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
-.project-information li {
-  color: #3a4a42;
-  background-color: #ebf0ee;
-  padding: 8px 12px;
+.button {
+  display: inline-flex;
+  background-color: #36b37e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #c5e9da;
+  color: #172b4d;
+  font-weight: bold;
+}
+
+.button:active {
+  background-color: #238c61;
 }
 
 .skill-list li {
@@ -200,66 +270,9 @@ span {
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
-  align-items: center;
   font-size: 12px;
   margin-bottom: 10px;
-}
-
-.flex-list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  size: 50px;
-}
-
-.keeping-track li {
-  color: #3a4a42;
-  background-color: #ebf0ee;
-  border-radius: 4px;
-  padding: 8px 12px;
-  margin-right: 8px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.project-information ul li {
-  margin: 2px;
-  background-color: ##ebf0ee;
-  border-radius: 5px;
-  padding: 10px;
-  color: ##3a4a42;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-}
-
-.project-information button {
-  background-color: #36b37e;
-  display: flex;
-  width: 122px;
-  height: 48px;
-  padding: 12px;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-button:hover {
-  background-color: #c5e9da;
-  color: #172b4d;
-  font-weight: bold;
-  transition: 0.3s;
+  justify-content: space-between;
 }
 
 .line {
@@ -267,30 +280,20 @@ button:hover {
   width: 70px;
   background-color: #36b37e;
   border-radius: 20px;
-}
-
-.flex-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-bottom: 3em;
 }
 
 .about-me-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
 }
 
 .my-skills {
-  background-color: rgb(228, 228, 228);
-  height: 316px;
-  width: 327px;
+  background-color: #ebf0ee;
+  max-height: 316px;
+  max-width: 327px;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 1em;
 }
 
 .my-skills h3 {
@@ -307,34 +310,37 @@ button:hover {
 }
 
 .skill-list {
-  list-style: none;
-  justify-content: first baseline;
-  align-items: center;
+  list-style-type: none;
+  padding: 0;
   display: flex;
-  margin: 2px;
   flex-wrap: wrap;
+  margin-top: 1em;
 }
 
 .about-me {
-  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 2em;
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
-  justify-content: center;
+  margin-top: 2em;
   align-items: center;
   color: #172b4d;
+  background-image: url("images/about-me\ back.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: auto;
 }
 
 .about-me button {
-  height: 48px;
-  width: 153px;
-  left: 99px;
-  top: 290px;
+  height: fit-content;
+  width: fit-content;
   border-radius: 4px;
-  padding: 12px;
+  padding: 1em;
   background-color: #36b37f;
   border: none;
   font-size: 17px;
@@ -343,20 +349,24 @@ button:hover {
   letter-spacing: 0.03em;
   text-align: center;
   color: #fff;
-  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
 }
 
 .about-me button:hover {
   background-color: #c5e9da;
   color: #172b4d;
-  transition: 0.4s;
+  font-weight: bold;
+}
+
+.about-me button:active {
+  background-color: #238c61;
 }
 
 .about-me p {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
-  margin-top: 50px;
   text-align: center;
   padding: 20px;
 }
