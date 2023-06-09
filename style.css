@@ -37,25 +37,31 @@ body {
   margin-bottom: 2rem;
 }
 
-.toolbar img {
-  margin-right: 60px;
-  float: right;
-  margin-top: 40px;
+.toolbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
 }
 
-.toolbar ul {
-  margin-top: 40px;
+.toolbar li {
+  padding: 0;
+  display: none;
+}
+
+.toolbar a {
   display: flex;
   height: 20%;
   list-style: none;
   align-items: center;
-  background-color: #172b4d;
-}
-
-a {
   text-decoration: none;
+  margin-right: 60px;
+  float: right;
+  margin-top: 40px;
   justify-content: space-between;
   padding: 20px;
+  color: black;
 }
 
 .primary {
@@ -100,12 +106,6 @@ span {
   align-items: center;
 }
 
-header ul a {
-  display: none;
-  color: black;
-  list-style: none;
-}
-
 .normal-button {
   margin-top: 100px;
 }
@@ -121,6 +121,8 @@ header ul a {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .my-work {
@@ -138,14 +140,9 @@ header ul a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
-  align-content: center;
-  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -365,20 +362,15 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  .toggle-nav {
+  .toolbar li {
     display: flex;
-  }
-
-  input[type="text"],
-  input[type="email"] {
-    width: 100vh;
-  }
-
-  textarea {
-    width: 500px;
   }
 
   .toolbar img {
     display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
