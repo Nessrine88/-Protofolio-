@@ -32,6 +32,9 @@ body {
   max-width: 100%;
   height: max-content;
   padding-bottom: 10%;
+  background-image: url(images/bg-contact-form.png);
+  background-repeat: no-repeat;
+  background-position: bottom 1% right;
 }
 
 .container {
