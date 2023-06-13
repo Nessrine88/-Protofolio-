@@ -371,6 +371,22 @@ h3 {
   padding: 20px;
 }
 
+.get-in-touch {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+  place-items: center;
+  color: #6b778c;
+}
+
 @media (min-width: 768px) {
   .toolbar li {
     display: flex;
