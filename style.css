@@ -80,6 +80,31 @@ body {
 header {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.headline ul {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-btn {
+  margin-top: 6em;
+}
+
+.headline img {
+  height: 20px;
+  width: 20px;
 }
 
 .primary {
@@ -112,13 +137,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2% 1%;
-}
-
-.headline ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 3% 5%;
 }
 
 .social-media ul {
@@ -154,6 +173,7 @@ span {
   align-items: center;
   justify-content: center;
   align-content: center;
+  padding-top: 10%;
 }
 
 .my-work {
@@ -476,13 +496,15 @@ textarea {
 
 @media (min-width: 768px) {
   .header {
-    background-image: url("images/Header-llustration-desktop.svg");
+    background-image: url("images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20%;
   }
 
   .primary {
@@ -506,8 +528,9 @@ textarea {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 20px;
     font-weight: 500;
+    font-size: 14px;
   }
 
   .toolbar img {
@@ -521,6 +544,8 @@ textarea {
 
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .contact-me {
@@ -532,7 +557,10 @@ textarea {
     background-image: url("images/about-me-bg.PNG");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% auto;
+    background-position: center bottom 10px;
+    margin-top: 16%;
+    margin-bottom: 3em;
+    padding-top: 3em;
   }
 
   .about-me p {
@@ -562,6 +590,8 @@ textarea {
     line-height: 52px;
     letter-spacing: 0;
     text-align: left;
+    margin-right: 3%;
+    margin-left: 20%;
   }
 
   form {
@@ -596,6 +626,10 @@ textarea {
   }
 
   .social-media ul {
-    margin-top: 15em;
+    margin-top: 12em;
+  }
+
+  .line {
+    display: none;
   }
 }
