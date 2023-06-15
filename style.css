@@ -18,18 +18,20 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .background {
   height: max-content;
-  width: auto;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #fff;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 100%;
+  padding-bottom: 10%;
+  background-image: url(images/bg-contact-form.png);
+  background-repeat: no-repeat;
+  background-position: bottom 1% right;
 }
 
 .container {
@@ -40,7 +42,7 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 3rem 1em;
   padding-bottom: 1em;
 }
 
@@ -152,7 +154,7 @@ span {
 .grid-container {
   display: grid;
   gap: 10px;
-  align-items: center;
+  place-items: center;
   justify-content: center;
   margin-top: 3em;
 }
@@ -290,10 +292,16 @@ h3 {
 
 .my-skills {
   background-color: #ebf0ee;
-  max-height: 316px;
-  max-width: 327px;
   border-radius: 8px;
-  margin-top: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 316px;
+  padding: 2%;
+  margin: 2% 2%;
+  width: 327px;
 }
 
 .my-skills h3 {
@@ -302,19 +310,20 @@ h3 {
   line-height: 32px;
   text-align: center;
   position: relative;
-  bottom: 25px;
+  bottom: 1em;
 }
 
 .my-skills img {
-  margin-top: 40px;
+  margin-top: 2em;
 }
 
 .skill-list {
   list-style-type: none;
   padding: 0;
   display: flex;
+  margin-bottom: 8%;
+  margin-top: 0;
   flex-wrap: wrap;
-  margin-top: 1em;
 }
 
 .about-me {
@@ -371,9 +380,84 @@ h3 {
   padding: 20px;
 }
 
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.get-in-touch {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  overflow: hidden;
+}
+
+.para {
+  margin: 10% 10% 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #6b778c;
+  width: 100%;
+}
+
+form input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  padding: 1%;
+  font-style: italic;
+  width: 75%;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  color: #6b778c;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea {
+  margin: 1em 0.5em;
+  padding: 3%;
+  font-style: italic;
+  color: #6b778c;
+  width: 71%;
+  border: 1px solid #60c095;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  margin: 1em 0;
+  color: #42526e;
+}
+
+#firstName,
+#lastName {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .toolbar li {
     display: flex;
+    justify-content: center;
   }
 
   .toolbar img {
@@ -382,5 +466,65 @@ h3 {
 
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .background {
+    background-image: url("images/bg-desktop.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom 6% right;
+  }
+
+  .para {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  form {
+    margin-top: 4em;
+    display: inline-block;
+  }
+
+  #firstName,
+  #lastName {
+    display: inline-block;
+    margin-right: 2%;
+    width: 35%;
+  }
+
+  textarea {
+    margin-left: 0;
+    height: fit-content;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .get-in-touch {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .form-btn {
+    margin-top: 0;
+  }
+
+  .social-media ul {
+    margin-top: 15em;
   }
 }
