@@ -63,30 +63,14 @@ body {
   display: none;
 }
 
-.toolbar li:hover {
-  font-size: 120%;
+.menu-bar {
+ margin-left: 250px;
+ margin-top: 50px;
+ transition: all 0.5s ease-out;
 }
 
-
-
-.toolbar a {
-  display: flex;
-  height: 20%;
-  list-style: none;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 60px;
-  float: right;
-  margin-top: 40px;
-  justify-content: space-between;
-  padding: 50px;
-  color: black;
-  transition-property: font-size;
-  transition-duration: 1s;
-}
-
-a :hover{
-  background-color:#b9f8de;
+a :hover {
+  background-color: #b9f8de;
   box-shadow: 0 0 35px #36b37e;
 }
 
@@ -116,8 +100,7 @@ header {
   transition: all 0.5s ease-out;
 }
 
-.arrow-btn:hover{
-  
+.arrow-btn:hover {
   background-color: #1380ec;
   border-radius: 50%;
 }
@@ -141,15 +124,18 @@ header {
 }
 
 @keyframes font-color-change {
-  from{
+  from {
     color: #ac064b;
   }
+
   50% {
     color: blue;
   }
+
   75% {
     color: rgb(250, 6, 6);
   }
+
   100% {
     color: rgb(255, 187, 0);
   }
@@ -340,7 +326,7 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   cursor: pointer;
-  transition: width 2s, height 2S, background-color 2s;
+  transition: width 2s, height 2s, background-color 2s;
 }
 
 .button:hover {
@@ -348,6 +334,7 @@ h3 {
   box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
   border-radius: 4px;
   animation-name: btn-change;
+  animation-duration: 1s;
 }
 
 .button:active {
@@ -358,10 +345,12 @@ h3 {
   from {
     background-color: #008552;
   }
+
   to {
     background-color: #172b4d;
   }
 }
+
 .skill-list li {
   background-color: rgb(255, 255, 255);
   padding: 12px;
@@ -460,13 +449,14 @@ h3 {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  animation-name: btn-change;
 }
 
 .about-me button:hover {
   background-color: #36b37f;
   box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
   border-radius: 4px;
+  animation-name: btn-change;
+  animation-duration: 2s;
 }
 
 .about-me button:active {
@@ -582,6 +572,11 @@ textarea {
     padding: 0;
     color: #172b4d;
     font-family: 'inter', sans-serif;
+  }
+
+  .menu-bar {
+    position: relative;
+    left: 2%;
   }
 
   .toolbar li {
